@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
             if (db.loginUser(username, password) == 0) {
                 Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getApplicationContext(), "Welcome " + username + "!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Welcome " + username + "!", Toast.LENGTH_SHORT).show();
                 SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("username", username);
